@@ -2,7 +2,7 @@
 let convert = document.getElementById("convert");
 let converted = document.getElementById("converted");
 
-// detect and use the function
+// detect the input and use the function
 convert.addEventListener("input", function(){
     convFranc(this.value);
 });
@@ -14,5 +14,10 @@ function convFranc(valeur){
             converted.style.opacity = "0";
         } else {
             converted.style.opacity = "1";
+            if (converted.textContent <= 1) {
+                converted.textContent += " franc"
+            } else {
+                converted.textContent += " francs"
+            }
         }
     }
