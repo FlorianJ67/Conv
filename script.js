@@ -14,10 +14,16 @@ function convFranc(valeur){
             converted.style.opacity = "0";
         } else {
             converted.style.opacity = "1";
-            if (parseInt(converted.textContent) <= 1) {
-                converted.textContent += " franc"
+            if (converted.textContent == "NaN") {
+                converted.textContent = "Vous devez saisir une valeur numérique !";
             } else {
-                converted.textContent += " francs"
+                if (parseInt(converted.textContent) <= 1) {
+                    converted.textContent += " franc"
+                } else {
+                    converted.textContent += " francs"
+                }
             }
         }
-    }
+
+}
+    
