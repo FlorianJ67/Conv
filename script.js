@@ -14,7 +14,7 @@ function convFranc(valeur){
             converted.style.opacity = "0";
         } else {
             converted.style.opacity = "1";
-            if (converted.textContent <= 1) {
+            if (parseInt(converted.textContent) <= 1) {
                 converted.textContent += " franc"
             } else {
                 converted.textContent += " francs"
