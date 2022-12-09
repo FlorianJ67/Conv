@@ -10,4 +10,9 @@ convert.addEventListener("input", function(){
 // display the value
 function convFranc(valeur){
         converted.textContent = valeur * 6.56;
+        if (converted.textContent == null || converted.textContent == 0) {
+            converted.style.opacity = "0";
+        } else {
+            converted.style.opacity = "1";
+        }
     }
