@@ -1,0 +1,11 @@
+#board {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 340px;
+    height: 340px;
+    background-color: rgba(139, 139, 139, 0.322);
+    margin:20% auto;
+    border-radius: 15px;
+}
